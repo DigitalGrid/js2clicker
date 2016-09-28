@@ -1,0 +1,127 @@
+body {
+
+}
+
+#circle {
+  border-radius: 100%;
+  background-color: #0078e7;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  -webkit-transition: 3.4s; /* For Safari 3.1 to 6.0 */
+  transition: 0.3s;
+}
+
+#circle:hover {
+  height: 220px;
+  width: 220px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.clicker {
+  display: flex;
+  align-self: center;
+}
+
+.score h2 {
+  align-self: center;
+  font-size: 100px;
+  color: #0078e7
+}
+
+.hide {
+  display: none;
+}
+
+.upgrades {
+  align-self: center;
+}
+
+.upgrade {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.upgrade-btn {
+  width: 300px;
+  position: relative;
+}
+
+.upgrade-img {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.upgrade-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.upgrade-name {
+  font-size: 25px;
+}
+
+.upgrade-cost {
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.cookie-icon {
+  align-self: center;
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
+}
+
+.upgrade-level {
+  position: absolute;
+  font-size: 30px;
+  opacity: 0.6;
+  right: 5%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.score {
+  align-self: center;
+}
+
+/* Animations */
+.wobble {
+  animation-name: wobble;
+  -moz-animation-name: wobble;
+  -webkit-animation-name: wobble;
+  
+  animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+}
+
+@keyframes wobble { 
+  0% {transform:scale(0.6);}
+  20% {transform:scale(1.2);}
+  30% {transform:scale(0.8);}
+  50% {transform:scale(1.1);}
+  70% {transform:scale(0.95);}
+  90% {transform:scale(1.05);}
+  100% {transform:scale(1);}
+} 
+
+@-webkit-keyframes wobble { 
+  0% {transform:scale(0.6);}
+  20% {transform:scale(1.2);}
+  30% {transform:scale(0.8);}
+  50% {transform:scale(1.1);}
+  70% {transform:scale(0.95);}
+  90% {transform:scale(1.05);}
+  100% {transform:scale(1);}
+}
